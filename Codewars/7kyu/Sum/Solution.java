@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Solution {
     public static int squareSum(int[] n) {
@@ -6,5 +7,8 @@ public class Solution {
             sum += Math.pow(num, 2);
         }
         return sum;
+    }
+    public static int squareSumStream(int[] n) {
+        return Arrays.stream(n).map(num -> num * num).sum();
     }
 }
