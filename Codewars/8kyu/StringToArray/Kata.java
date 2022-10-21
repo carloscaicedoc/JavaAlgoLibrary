@@ -64,7 +64,6 @@ class Kata {
         for (int i = 0; i < res.size(); i++) {
             result[i] = res.get(i);
         }
-
         return result;
     }
 }
