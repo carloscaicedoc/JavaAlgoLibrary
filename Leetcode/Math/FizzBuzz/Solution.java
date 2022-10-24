@@ -1,4 +1,4 @@
-// leetCode 412
+// LeetCode 412
 
 import java.util.ArrayList;
 
