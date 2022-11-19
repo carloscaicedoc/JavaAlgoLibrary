@@ -11,7 +11,7 @@ public class Test {
         System.out.println(bio.dnaToRnaCharArray("GCAU"));
         System.out.println(bio.dnaToRnaCharArray("UUUU"));
 
-        System.out.println(bio.dnaToRna4("GCAU"));
+        System.out.println(bio.dnaToRna4("GUAU"));
         System.out.println(bio.dnaToRna4("UUUU"));
     }
 }

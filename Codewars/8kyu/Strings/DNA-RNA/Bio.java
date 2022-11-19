@@ -42,6 +42,7 @@ public class Bio {
             }
         }
         rna = String.valueOf(arr);
+        
         return rna;
     }
 

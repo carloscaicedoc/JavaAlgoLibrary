@@ -8,7 +8,6 @@ public class BioTest {
         Bio b = new Bio();
         assertEquals("UUUU", b.dnaToRna("TTTT"));
     }
-
     @Test
     public void testDna2() throws Exception {
         Bio b = new Bio();
