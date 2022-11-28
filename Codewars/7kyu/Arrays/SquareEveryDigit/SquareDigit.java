@@ -1,4 +1,3 @@
-
 /* CodeWars 7kyu - Square Every Digit
 
 In this kata, you are asked to square every digit of a number and concatenate them.
@@ -18,7 +17,6 @@ public class SquareDigit {
             int sq = dgt * dgt;
             res += Integer.toString(sq);
         }
-
         return Integer.parseInt(res);
     }
 
@@ -48,6 +46,7 @@ public class SquareDigit {
         return Integer.parseInt(result);
     }
 
+    // StringBuffer approach
     public int squareDigitsStringBuffer(int n) {
         // Use StringBuffer due to performance
         final StringBuffer result = new StringBuffer();
@@ -64,7 +63,8 @@ public class SquareDigit {
         }
         return Integer.parseInt(result.toString());
     }
-
+    
+    // StringBuilder approach
     public int squareDigitsStringBuilder(int n) {
         StringBuilder sb = new StringBuilder();
         String num = String.valueOf(n);
@@ -75,5 +75,4 @@ public class SquareDigit {
         }
         return Integer.valueOf(sb.toString());
     }
-
 }
