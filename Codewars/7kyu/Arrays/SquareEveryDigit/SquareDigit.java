@@ -20,8 +20,7 @@ public class SquareDigit {
         return Integer.parseInt(res);
     }
 
-    // Alternative Solutions
-
+    /* Alternative Solutions */ 
     // .map() approach
     public int squareDigitsMap(int n) {
         return Integer.parseInt(String.valueOf(n)
@@ -34,7 +33,6 @@ public class SquareDigit {
 
     // .toCharArray()
     public int squareDigitsCharArray(int n) {
-
         String strDigits = String.valueOf(n);
         String result = "";
 
@@ -42,7 +40,6 @@ public class SquareDigit {
             int digit = Character.digit(c, 10);
             result += digit * digit;
         }
-
         return Integer.parseInt(result);
     }
 
