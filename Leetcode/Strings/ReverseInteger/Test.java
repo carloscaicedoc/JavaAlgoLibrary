@@ -5,6 +5,5 @@ public class Test {
         System.out.println(test.reverseInt(54321));
         System.out.println(test.reverseInt(123));
         System.out.println(test.reverseInt(780012));
-
     }
 }
