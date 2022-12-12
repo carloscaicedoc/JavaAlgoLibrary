@@ -10,6 +10,25 @@ Output: 4
 */
 
 public class Solution {
+    int binarySearch(int[] sortedNums, int searchNum) {
+        int leftIdx = 0;
+        int rightIdx = sortedNums.length - 1;
+
+        while (leftIdx <= rightIdx) {
+            int midIdx = (int)Math.floor(rightIdx - leftIdx / 2);      
+            if (sortedNums[midIdx] == searchNum) {
+                return midIdx;
+            }
+            if (sortedNums[midIdx] < searchNum) {
+                leftIdx = midIdx + 1;
+            } else {
+                rightIdx = midIdx - 1;
+            }
+        }
+
+        return -1;
+    }
+
     public int search(int[] nums, int target) {
         int left = 0;
         int right = nums.length - 1;
@@ -27,25 +46,6 @@ public class Solution {
             else {
             // If target smaller, ignore right half
                 right = mid - 1;
-            }
-        }
-
-        return -1;
-    }
-
-    int binarySearch(int[] sortedNums, int searchNum) {
-        int leftIdx = 0;
-        int rightIdx = sortedNums.length - 1;
-
-        while (leftIdx <= rightIdx) {
-            int midIdx = (int)Math.floor(rightIdx - leftIdx / 2);      
-            if (sortedNums[midIdx] == searchNum) {
-                return midIdx;
-            }
-            if (sortedNums[midIdx] < searchNum) {
-                leftIdx = midIdx + 1;
-            } else {
-                rightIdx = midIdx - 1;
             }
         }
 
