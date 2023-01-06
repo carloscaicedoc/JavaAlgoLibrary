@@ -9,6 +9,7 @@ public class Kata {
         return total;
     }
 
+    // Alternative Solutions
     public static int rentalCarCostTernary(int d) {
         int total = d * 40;
         return d < 3 ? total : d < 7 ? total - 20 : total - 50;
